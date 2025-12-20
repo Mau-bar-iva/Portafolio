@@ -1,0 +1,10 @@
+.nav-container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 100%;
+    background: #0E1452;
+    z-index: -1;
+}

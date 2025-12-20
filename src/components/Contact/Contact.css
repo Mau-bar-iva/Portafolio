@@ -1,0 +1,35 @@
+.socialmedia {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: width 0.4s ease;
+}
+
+.socialmedia .icon {
+  color: white;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.socialmedia .text {
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.2s ease, transform 0.3s ease;
+}
+
+.socialmedia:hover {
+  width: 360px;
+}
+
+.socialmedia:hover .text {
+  opacity: 1;
+  transform: translateX(0);
+}
