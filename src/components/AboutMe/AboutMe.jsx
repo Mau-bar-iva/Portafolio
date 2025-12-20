@@ -15,7 +15,7 @@ export default function AboutMe(){
             <div className="h-full w-full grid grid-cols-2 align-content-center justify-items-center justify-center px-[1%]">
                 <div className="w-full flex justify-center items-center">
                     <div className="w-[70%] max-w-[420px] overflow-hidden rounded-[20px]">
-                        <img src="./public/aboutme.jpg" alt="" />
+                        <img src="/aboutme.jpg" alt="" />
                     </div>
                 </div>
                 <div className="absolute top-4 left-[1%] top-[50%] translate-y-[-50%] flex flex-col gap-5">

@@ -11,7 +11,7 @@ export default function Hero(){
         id="section-inicio" 
         className="relative min-h-screen px-10 box-border bg-[linear-gradient(to_right,#0f1452,#0E1452,#351266)] scroll-mt-24"
         >
-            <div className="relative h-[600px] bg-[#032258] rounded-xl rounded-t-[6%] overflow-hidden flex bg-[url('./public/me.png')] bg-[position:150%_50%] bg-no-repeat">
+            <div className="relative h-[600px] bg-[#032258] rounded-xl rounded-t-[6%] overflow-hidden flex bg-[url('/me.png')] bg-[position:150%_50%] bg-no-repeat">
                 <div className="absolute bottom-[40%] text-left h-[80px] ml-[30px] flex flex-col">
                     <span className="text-5xl font-bold text-[#e8fd1c]
     text-shadow-[0_0_8px_#e25ccf]
