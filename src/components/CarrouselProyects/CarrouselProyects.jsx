@@ -5,6 +5,16 @@ import { motion } from 'framer-motion'
 const particlesCount = 40
 
 export default function CarrouselProyects(){
+    
+
+    const proyects = [
+        {nombre: "Proyecto 1", descripcion: "Descripción del proyecto 1", imagen: "/suplementosgold.png", path:"#"},
+        {nombre: "Proyecto 2", descripcion: "Descripción del proyecto 2", imagen: "/modeavelour.png", path:"#"},
+        {nombre: "Proyecto 3", descripcion: "Descripción del proyecto 3", imagen: "/todoapp.png", path:"#"},
+        {nombre: "Proyecto 4", descripcion: "Descripción del proyecto 4", imagen: "/proyecto4.jpg", path:"#"},
+        {nombre: "Proyecto 5", descripcion: "Descripción del proyecto 5", imagen: "/proyecto5.jpg", path:"#"},
+    ]
+
     const particles = useMemo(() => {
     return [...Array(particlesCount)].map((_, i) => {
         const t = i / particlesCount;
@@ -23,24 +33,25 @@ export default function CarrouselProyects(){
 
     return(
         <>
-            <ul className="w-full relative h-full flex justify-center items-center gap-5 px-15 pb-1">
+            <ul className="w-full relative h-full flex justify-center items-center gap-5 px-5 md:px-15 pb-1">
                 <motion.li
                     whileHover={{ y: -32, scaleY: 1.03 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    transition={{ type: "spring"}}
                     className="w-[30%] h-[70%] bg-[black] rounded-3xl cursor-pointer">
-
+                    <img src={proyects[0].imagen} alt={proyects[0].nombre} className="w-full h-full object-cover rounded-3xl brightness-50 hover:brightness-100 transition-all duration-300" />
                 </motion.li>
                 <motion.li
                     whileHover={{ y: -32, scaleY: 1.03 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    transition={{ type: "spring"}}
                     className="w-[40%] h-[80%] bg-[black] rounded-3xl cursor-pointer">
-
+                    <img src={proyects[1].imagen} alt={proyects[1].nombre} className="w-full h-full object-cover rounded-3xl brightness-50 hover:brightness-100 transition-all duration-300" />
                 </motion.li>
+                    
                 <motion.li
                     whileHover={{ y: -32, scaleY: 1.03 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    transition={{ type: "spring"}}
                     className="w-[30%] h-[70%] bg-[black] rounded-3xl cursor-pointer">
-
+                        <img src={proyects[2].imagen} alt={proyects[2].nombre} className="w-full h-full object-cover rounded-3xl brightness-50 hover:brightness-100 transition-all duration-300" />
                 </motion.li>
                 <div className="absolute bottom-0 left-[50%] translate-x-[-49.9%] w-[95%] pointer-events-none">
                     <div className="relative w-full libro-emitter ">

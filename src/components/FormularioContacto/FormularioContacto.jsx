@@ -44,7 +44,7 @@ export default function FormularioContacto(){
                 font-bold
                 border-4 border-black
                 shadow-[8px_8px_0_#000]
-                text-[#ad9d52]
+                text-[#dfc48d]
                 rounded
             ">Enviar
             </button>

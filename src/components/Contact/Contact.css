@@ -2,11 +2,9 @@
   display: flex;
   align-items: center;
   gap: 12px;
-
   width: 48px;
   height: 48px;
   border-radius: 9999px;
-  overflow: hidden;
   cursor: pointer;
 
   transition: width 0.4s ease;
@@ -32,4 +30,14 @@
 .socialmedia:hover .text {
   opacity: 1;
   transform: translateX(0);
+}
+
+@media (width < 640px) {
+  .socialmedia {
+    width: auto;
+  }
+
+  .socialmedia .text {
+    opacity: 1;
+  }
 }

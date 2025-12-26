@@ -14,8 +14,8 @@ export default function Contact(){
         id="section-contact" 
         className="relative min-h-[50vh] pt-[1.5rem] bg-[linear-gradient(to_bottom,#66125B,#121966)]"
         >
-            <div className="h-full flex justify-center items-center gap-25 py-20 pb-10 px-30">
-                <div className="max-w-xl h-full flex flex-col gap-10 pb-40">
+            <div className="h-full flex flex-col md:flex-row justify-center items-center gap-15 md:gap-25 py-20 pb-10 px-5 md:px-30">
+                <div className="max-w-xl h-full flex flex-col gap-10 md:pb-40">
                     
                     <h2 className="text-5xl flex-1 pl-2
                     text-[#e8fd1c] 
@@ -25,11 +25,11 @@ export default function Contact(){
                     text-shadow-[0_0_30px_#66125b]
                     text-6xl font-semibold">
                         
-                        <span className="absolute h-6 w-30 text-[#66125B] border-b left-0 translate-y-[50%]"></span>
-                        <span className="absolute h-6 w-150 text-[#66125B] border-b left-0 translate-y-[180%] "></span>
+                        <span className="hidden md:block absolute h-6 w-30 text-[#66125B] border-b left-0 translate-y-[50%]"></span>
+                        <span className="hidden md:block absolute h-6 w-150 text-[#66125B] border-b left-0 translate-y-[180%] "></span>
                         Contactame</h2>
 
-                    <p className="text-3xl text-[#2076E0]">Si tenes algún proyecto en mente hablemos y construyamos juntos</p>
+                    <p className="text-3xl text-[#2076E0] text-center md:text-left">Si tenes algún proyecto en mente hablemos y construyamos juntos</p>
                     
                     <div className="flex flex-col gap-5 text-[#2076E0]">
                         <a href="#" className="group socialmedia
@@ -54,7 +54,7 @@ export default function Contact(){
                         </a>
                     </div>
                 </div>
-                <div className="max-w-xl w-full h-full px-20">
+                <div className="max-w-xl w-full h-full md:px-20">
                     <FormularioContacto />
                 </div>
             </div>

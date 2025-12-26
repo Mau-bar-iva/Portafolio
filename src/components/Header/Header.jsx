@@ -15,10 +15,10 @@ export default function Header(){
         animate={{ y: 0, opacity: 1 }}
         viewport={{ once: false, margin: "0px" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="fixed top-0 left-0 h-[3rem] w-full flex justify-center z-10"
+        className="fixed top-0 left-0 h-[3rem] w-full flex justify-center z-50"
         >
-            <div className="relative w-full flex gap-[520px] justify-left pl-20">
-                <div className="nav-container h-[80%] w-100 flex items-center justify-center px-5 rounded-b-3xl bg-[#0E1452]">
+            <div className="relative w-full flex md:gap-[520px] justify-start md:pl-20">
+                <div className="nav-container h-[80%] w-100 flex items-center md:justify-center px-5 rounded-b-3xl bg-[#0E1452]">
                     <Nav/>
                 </div>
                 {/*<div className="h-full w-fit ml-40 flex items-center px-5 rounded-b-3xl bg-[#0E1452]">

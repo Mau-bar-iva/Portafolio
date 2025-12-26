@@ -12,23 +12,8 @@ export default function AboutMe(){
         id="section-aboutme" 
         className="relative flex flex-col items-center justify-center min-h-[98vh] py-[1.5rem] box-border bg-[linear-gradient(to_left_bottom,#351266,#0E1452,#150c20,#150c20,#150c20)]"
         >
-            <div className="h-full w-full grid grid-cols-2 align-content-center justify-items-center justify-center px-[1%]">
-                <div className="w-full flex justify-center items-center">
-                    <div className="w-[70%] max-w-[420px] overflow-hidden rounded-[20px]">
-                        <img src="/aboutme.jpg" alt="" />
-                    </div>
-                </div>
-                <div className="absolute top-4 left-[1%] top-[50%] translate-y-[-50%] flex flex-col gap-5">
-                    {Tecnologias("html", "css", "tailwindcss", "javascript", "react", "bootstrap","python", "django", "mysql", "git").map((icon, index) => (
-                    <img
-                        key={index}
-                        src={icon}
-                        alt="technology icon"
-                        className="w-8 h-8"
-                    />
-                    ))}
-                </div>
-                <div className="text-[#2076e0]">
+            <div className="h-full w-full grid md:grid-cols-2 md:grid-rows-[100px_1fr] align-content-center justify-items-center justify-center gap-5 md:gap-0 md:px-[1%]">
+                <div className=" flex w-full justify-center items-center md:justify-start md:items-start md:col-[2/2] ">
                     <h1 className="
                     mb-5
                     text-[#e8fd1c] 
@@ -39,9 +24,26 @@ export default function AboutMe(){
                     text-6xl ">
                         Sobre mi
                     </h1>
+                </div>
+                <div className="w-full flex justify-center items-center md:order-2 md:col-[1/2] md:row-[1/3]">
+                    <div className="w-[70%] max-w-[420px] overflow-hidden rounded-[20px]">
+                        <img src="/aboutme.jpg" alt="" />
+                    </div>
+                </div>
+                <div className="order-2 my-20 md:my-0 md:absolute md:top-4 md:left-[1%] md:top-[50%] md:translate-y-[-50%] grid grid-cols-[repeat(5,1fr)] md:flex md:flex-col  gap-8 md:gap-5">
+                    {Tecnologias("html", "css", "tailwindcss", "javascript", "react", "bootstrap","python", "django", "mysql", "git").map((icon, index) => (
+                    <img
+                        key={index}
+                        src={icon}
+                        alt="technology icon"
+                        className="w-8 h-8"
+                    />
+                    ))}
+                </div>
+                <div className="order-1 text-[#2076e0] p-2 md:p-0">
                     <h2 className="text-3xl bg-[#221266] rounded w-fit p-2 mb-2">soy <strong className="text-4xl">Mauricio Barreras</strong></h2>
                     <h2 className="text-4xl bg-[#221266] rounded w-fit p-2"><strong>Desarrollador Frontend</strong></h2>
-                    <p className="my-4 mb-10 text-xl pr-[8rem]">Actualmente estoy fortaleciendo mis conocimientos, trabajando en proyectos que me ayudan a mejorar cada día mientras mantengo la prioridad en mi formación académica.
+                    <p className="my-4 mb-10 text-xl  md:pr-[8rem]">Actualmente estoy fortaleciendo mis conocimientos, trabajando en proyectos que me ayudan a mejorar cada día mientras mantengo la prioridad en mi formación académica.
                         <br />
                         <br />
                         Concentro mi enfoque en construir interfaces claras, funcionales y bien pensadas. 
@@ -52,11 +54,11 @@ export default function AboutMe(){
                         <br />
                         Cuando no estoy programando, me gusta escuchar música, descubrir cosas nuevas y experimentar con diseños.
                     </p>
-                    <div>
+                    <div className="flex justify-center md:justify-start">
                         <motion.button
-                        whileHover={{ backgroundColor: "#7715c8b5", textShadow:"0px 0px 2px #9e8203ff", boxShadow:"0 0 10px 4px #ad9d52" }}
+                        whileHover={{ backgroundColor: "#221266", textShadow:"0px 0px 2px #9e8203ff", boxShadow:"0 0 10px 4px #ad9d52" }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="w-50 text-xl text-[#ad9d52] font-semibold py-2 bg-transparent border border-[#ad9d52] box-shadow-none rounded cursor-pointer">
+                        className="w-50 text-xl text-[#dfc48d] font-semibold py-2 bg-transparent border border-[#dfc48d] box-shadow-none rounded cursor-pointer">
                             Descargar CV
                         </motion.button>
                         
