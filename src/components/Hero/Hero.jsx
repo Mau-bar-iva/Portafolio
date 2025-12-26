@@ -28,7 +28,7 @@ export default function Hero(){
                     Acá vas a encontrar los proyectos que estuve construyendo mientras avanzo en mi camino como desarrollador frontend.
                 </p>
             </div>
-            <div className="md:absolute md:top-[50%] md:translate-y-[220%] md:left-[180px] h-20 md:w-[35rem] p-4 md:pl-10 bg-[#0f1452] rounded-b-xl rounded-se-xl flex items-center">
+            <div className="md:absolute md:top-[50%] md:translate-y-[220%] md:left-[18px] h-20 md:w-[55rem] p-4 md:pl-10 bg-[#0f1452] rounded-b-xl rounded-se-xl flex md:justify-center items-center">
                 <p className="text-[#2076e0]">
                     ¡Gracias por pasar y espero que disfrutes explorando mi trabajo!
                 </p>
