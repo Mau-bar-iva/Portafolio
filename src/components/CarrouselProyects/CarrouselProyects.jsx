@@ -5,8 +5,6 @@ import { useProjectContext } from  "../../context/projectContext/useProjectConte
 
 const particlesCount = 40
 
-
-
 export default function CarrouselProyects({ projects }) {
     const { activeProject, setActiveProject } = useProjectContext(projects[0]);
 
@@ -72,7 +70,7 @@ export default function CarrouselProyects({ projects }) {
                     className="w-[30%] h-[70%] bg-[black] rounded-3xl cursor-pointer">
                         <img src={projects[2].imagen} alt={projects[2].nombre} className={`w-full h-full object-cover rounded-3xl  hover:brightness-100 ${activeProject?.id === projects[2].id ? "brightness-100" : "brightness-50"} transition-all duration-300`} />
                 </motion.li>
-                <div className="absolute bottom-0 left-[50%] translate-x-[-49.9%] w-[95%] pointer-events-none">
+                {!(window.innerWidth < 768) && <div className="absolute bottom-[-15px]  left-[50%] translate-x-[-49.9%] w-[95%] pointer-events-none">
                     <div className="relative w-full ">
                         <img
                             src={Libro}
@@ -101,7 +99,7 @@ export default function CarrouselProyects({ projects }) {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div>}
             </ul>
             
         </>
