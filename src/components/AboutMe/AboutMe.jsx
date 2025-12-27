@@ -55,12 +55,16 @@ export default function AboutMe(){
                         Cuando no estoy programando, me gusta escuchar música, descubrir cosas nuevas y experimentar con diseños.
                     </p>
                     <div className="flex justify-center md:justify-start">
-                        <motion.button
+                        <motion.a
                         whileHover={{ backgroundColor: "#221266", textShadow:"0px 0px 2px #9e8203ff", boxShadow:"0 0 10px 4px #ad9d52" }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="w-50 text-xl text-[#dfc48d] font-semibold py-2 bg-transparent border border-[#dfc48d] box-shadow-none rounded cursor-pointer">
+                        className="w-50 flex justify-center text-xl text-[#dfc48d] font-semibold py-2 bg-transparent border border-[#dfc48d] box-shadow-none rounded cursor-pointer"
+                        href="/Mauricio_Barreras_CV.docx"
+                        download
+                        >
+                        
                             Descargar CV
-                        </motion.button>
+                        </motion.a>
                         
                     </div>
                 </div>
