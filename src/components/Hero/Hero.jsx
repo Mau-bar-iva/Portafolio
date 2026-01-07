@@ -1,23 +1,38 @@
 import { motion } from "framer-motion"
 
-export default function Hero(){
-    return(
+export default function Hero() {
+    return (
         <motion.div
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 60 }}
-        viewport={{ once: false, margin: "-200px" }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        id="section-inicio" 
-        className="relative min-h-screen md:px-10 box-border bg-[linear-gradient(to_right,#0f1452,#0E1452,#351266)] scroll-mt-24"
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 60 }}
+            viewport={{ once: false, margin: "-200px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            id="section-inicio"
+            className="relative min-h-screen md:px-10 box-border bg-[linear-gradient(to_right,#0f1452,#0E1452,#351266)] scroll-mt-24"
         >
-            <div className="relative h-[650px] bg-[#032258] rounded-xl rounded-t-[6%] overflow-hidden flex bg-[url('/me.png')] bg-[position:40%_50%] md:bg-[position:150%_50%] bg-no-repeat shadow-[inset_0_-70px_50px_#0f1452] md:shadow-none">
-                <div className="absolute bottom-[40%] text-left h-[80px] ml-[30px] flex flex-col">
-                    <span className="text-5xl font-bold text-[#e8fd1c]
-    text-shadow-[0_0_8px_#e25ccf]
-    text-shadow-[0_0_10px_#e25ccf]
-    text-shadow-[0_0_20px_#9c1b8c]
-    text-shadow-[0_0_30px_#66125b]">
+            <div className="
+            relative 
+            h-[650px] 
+            rounded-xl 
+            rounded-t-[6%] 
+            overflow-hidden 
+            flex 
+            bg-[#032258]
+            bg-[url('/me.png')] 
+            bg-[position:30%_50%] 
+            md:bg-[position:10%_50%] 
+            lg:bg-[position:120%_50%] 
+            bg-no-repeat 
+            shadow-[inset_0_-70px_50px_#0f1452] 
+            md:shadow-[inset_20rem_10px_100px_#032258]
+            lg:shadow-[inset_30rem_10px_100px_#032258]">
+                <div className="absolute bottom-[40%] text-center md:text-left md:h-[80px] md:ml-[30px] flex flex-col">
+                    <span className="text-4xl font-bold px-[20px] text-[#e8fd1c]
+                        text-shadow-[0_0_8px_#e25ccf]
+                        text-shadow-[0_0_10px_#e25ccf]
+                        text-shadow-[0_0_20px_#9c1b8c]
+                        text-shadow-[0_0_30px_#66125b]">
                         ¡Bienvenido a mi portafolio!
                     </span>
                 </div>

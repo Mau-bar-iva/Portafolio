@@ -1,18 +1,18 @@
 import { Tecnologias } from "../Tecnologias/Tecnologias"
 import { motion } from "framer-motion"
 
-export default function AboutMe(){
-    return(
+export default function AboutMe() {
+    return (
         <motion.section
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 60 }}
-        viewport={{ once: false, margin: "-200px" }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        id="section-aboutme" 
-        className="relative flex flex-col items-center justify-center min-h-[98vh] py-[1.5rem] box-border bg-[linear-gradient(to_left_bottom,#351266,#0E1452,#150c20,#150c20,#150c20)]"
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 60 }}
+            viewport={{ once: false, margin: "-200px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            id="section-aboutme"
+            className="relative flex flex-col items-center justify-center min-h-[98vh] py-[1.5rem] box-border bg-[linear-gradient(to_left_bottom,#351266,#0E1452,#150c20,#150c20,#150c20)]"
         >
-            <div className="h-full w-full grid md:grid-cols-2 md:grid-rows-[100px_1fr] align-content-center justify-items-center justify-center gap-5 md:gap-0 md:px-[1%]">
+            <div className="h-full w-full grid md:grid-cols-2 md:grid-rows-[auto_1fr] align-content-center justify-items-center justify-center gap-5 md:gap-0 md:px-[1%]">
                 <div className=" flex w-full justify-center items-center md:justify-start md:items-start md:col-[2/2] ">
                     <h1 className="
                     mb-5
@@ -21,32 +21,32 @@ export default function AboutMe(){
                     text-shadow-[0_0_10px_#e25ccf]
                     text-shadow-[0_0_20px_#9c1b8c]
                     text-shadow-[0_0_30px_#66125b]
-                    text-6xl ">
+                    text-5xl ">
                         Sobre mi
                     </h1>
                 </div>
                 <div className="w-full flex justify-center items-center md:order-2 md:col-[1/2] md:row-[1/3]">
                     <div className="w-[70%] max-w-[420px] overflow-hidden rounded-[20px]">
-                        <img src="/aboutme.jpg" alt="" />
+                        <img src="/aboutMe.jpeg" alt="" />
                     </div>
                 </div>
-                <div className="order-2 my-20 md:my-0 md:absolute md:top-4 md:left-[1%] md:top-[50%] md:translate-y-[-50%] grid grid-cols-[repeat(5,1fr)] md:flex md:flex-col  gap-8 md:gap-5">
-                    {Tecnologias("html", "css", "tailwindcss", "javascript", "react", "bootstrap","python", "django", "mysql", "git").map((icon, index) => (
-                    <img
-                        key={index}
-                        src={icon}
-                        alt="technology icon"
-                        className="w-8 h-8"
-                    />
+                <div className="order-2 px-[1.5rem] my-20 md:my-0 md:absolute md:top-4 md:left-[1%] md:top-[50%] md:translate-y-[-50%] grid grid-cols-[repeat(5,1fr)] md:flex md:flex-col  gap-8 md:gap-5">
+                    {Tecnologias("html", "css", "tailwindcss", "javascript", "react", "bootstrap", "python", "django", "mysql", "git").map((icon, index) => (
+                        <img
+                            key={index}
+                            src={icon}
+                            alt="technology icon"
+                            className="w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] md:w-[2rem] md:h-[2rem]"
+                        />
                     ))}
                 </div>
-                <div className="order-1 text-[#2076e0] p-2 md:p-0">
-                    <h2 className="text-3xl bg-[#221266] rounded w-fit p-2 mb-2">soy <strong className="text-4xl">Mauricio Barreras</strong></h2>
-                    <h2 className="text-4xl bg-[#221266] rounded w-fit p-2"><strong>Desarrollador Frontend</strong></h2>
-                    <p className="my-4 mb-10 text-xl  md:pr-[8rem]">Actualmente estoy fortaleciendo mis conocimientos, trabajando en proyectos que me ayudan a mejorar cada día mientras mantengo la prioridad en mi formación académica.
+                <div className="order-1 text-[#2076e0] sm:p-[1rem] md:p-0">
+                    <h2 className="text-3xl bg-[#221266] rounded w-fit sm:w-full sm:text-center md:w-fit md:text-left p-[.5rem] mb-2">soy <strong className="text-4xl">Mauricio Barreras</strong></h2>
+                    <h2 className="text-4xl bg-[#221266] rounded w-fit sm:w-full sm:text-center md:w-fit md:text-left p-[.5rem]"><strong>Desarrollador Frontend</strong></h2>
+                    <p className="my-4 mb-10 text-xl px-[1rem] md:pr-[8rem] lg:px-0 lg:pr-[2rem]">Actualmente estoy fortaleciendo mis conocimientos, trabajando en proyectos que me ayudan a mejorar cada día mientras mantengo la prioridad en mi formación académica.
                         <br />
                         <br />
-                        Concentro mi enfoque en construir interfaces claras, funcionales y bien pensadas. 
+                        Concentro mi enfoque en construir interfaces claras, funcionales y bien pensadas.
                         <br />
                         <br />
                         Mi objetivo es crecer profesionalmente y formar parte de un equipo donde pueda aportar, aprender y enfrentar desafíos reales.
@@ -56,16 +56,16 @@ export default function AboutMe(){
                     </p>
                     <div className="flex justify-center md:justify-start">
                         <motion.a
-                        whileHover={{ backgroundColor: "#221266", textShadow:"0px 0px 2px #9e8203ff", boxShadow:"0 0 10px 4px #ad9d52" }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="w-50 flex justify-center text-xl text-[#dfc48d] font-semibold py-2 bg-transparent border border-[#dfc48d] box-shadow-none rounded cursor-pointer"
-                        href="/Mauricio_Barreras_CV.docx"
-                        download
+                            whileHover={{ backgroundColor: "#221266", textShadow: "0px 0px 2px #9e8203ff", boxShadow: "0 0 10px 4px #ad9d52" }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            className="w-50 flex justify-center text-xl text-[#dfc48d] font-semibold py-2 bg-transparent border border-[#dfc48d] box-shadow-none rounded cursor-pointer"
+                            href="/Mauricio_Barreras_CV.docx"
+                            download
                         >
-                        
+
                             Descargar CV
                         </motion.a>
-                        
+
                     </div>
                 </div>
             </div>
