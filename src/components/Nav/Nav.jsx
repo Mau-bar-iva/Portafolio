@@ -14,7 +14,7 @@ export default function Nav({ mobile }) {
                         <Menu size={30} color="#e8fd1c" />
                     </button>
                     {!menuVisible && (
-                        <ul className="nav-mobile-menu absolute w-full mt-[20rem] left-0 flex flex-col items-center text-2xl text-[#2076e0] gap-8">
+                        <ul className="nav-mobile-menu absolute w-full  left-0 flex flex-col items-center text-2xl text-[#2076e0] gap-8">
                             <li className="hover:text-[#dfc48d]"><a href="#section-inicio">Inicio</a></li>
                             <li className="hover:text-[#dfc48d]"><a href="#section-aboutme">Sobre mi</a></li>
                             <li className="hover:text-[#dfc48d]"><a href="#section-proyects">Proyectos</a></li>
