@@ -15,6 +15,20 @@
     animation: fadeIn .5s ease-out .2s forwards;
 }
 
+/* Fade-in animation (from invisible to visible). The class above relies on this keyframe.
+   Without this, opacity stays at 0 and the menu text remains invisible. */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes Expand {
     0% {
         width: 75px;
